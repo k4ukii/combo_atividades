@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peso</title>
+</head>
+<body>
+  <h1>atividade 2</h1>
+  <font face="timesnewroman" color="purple" size="14"><div id="peso"></div></font>
+  
+  <script>
+    let nome1 = prompt("insira o primeiro nome");
+    let numero1 = prompt("insira o peso em kg");
+    let nome2 = prompt("insira o segundo nome");
+    let numero2 = prompt("insira o peso em kg");
+
+
+    let retorno = "";
+
+    if(parseInt(numero1) > parseInt(numero2)) {
+        retorno = "Pessoa mais obesa: " + nome1 +", pesando: " + numero1+"kg"
+    } 
+    else {
+      retorno = "Pessoa mais obesa: " + nome2 +", pesando: " + numero2 + "kg" }
+    document.getElementById("peso").innerHTML = retorno;
+
+
+  </script>
+</body>
+</html>

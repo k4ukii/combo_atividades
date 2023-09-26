@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>premio</title>
+</head>
+<body>
+  <h1>atividade 6</h1>
+  <h3>meta: 30 vendas</h3>
+  <font face="timesnewroman" color="purple" size="14"><div id="resultado"></div></font>
+  
+  <script>
+    
+    let funcionario = prompt("Qual o nome do funcionário?");
+    meta = 30
+    let venda = prompt("quantas vendas foram realizadas?")
+    let retorno = "";
+
+    if(parseInt(venda)>= 30) {
+        retorno =  funcionario +" Parabéns você ganhou!" 
+    } 
+    else {
+      retorno =  funcionario +" Poxa.. Não ganhou!"  }
+    document.getElementById("resultado").innerHTML = retorno;
+
+
+  </script>
+</body>
+</html>

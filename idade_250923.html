@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+</head>
+<body>
+  <h1>atividade 3</h1>
+  
+  <font face="timesnewroman" color="purple" size="13">
+  <div id="pe1"></div> 
+  <div id="pe2"></div> 
+  <div id="anos"></div> 
+  </font>
+  <script>
+    let numero = prompt ("Insira o ano atual")
+    let nome1 = prompt("insira o primeiro nome");
+    let numero1 = prompt("insira o ano de nascimento");
+    let nome2 = prompt("insira o segundo nome");
+    let numero2 = prompt("insira o ano de nascimento");
+
+let retorno = "";
+
+idade1 = parseInt(numero) - parseInt(numero1)
+idade2 = parseInt(numero) - parseInt(numero2)
+let retorno1 ="Nome: "+ nome1 +", Idade: "+ idade1 +"."
+let retorno2 ="Nome: "+ nome2 +", Idade: "+ idade2 +"."
+    if(parseInt(idade1) > parseInt(idade2)) {
+        retorno = "Pessoa mais nova: " + nome2 +"."
+    } 
+    else {
+      retorno = "Pessoa mais nova: " + nome1 +"." }
+    document.getElementById("anos").innerHTML = retorno;
+    document.getElementById("pe1").innerHTML = retorno1;
+    document.getElementById("pe2").innerHTML = retorno2;
+ 
+
+
+  </script>
+</body>
+</html>

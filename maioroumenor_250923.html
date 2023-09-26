@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maioroumenor</title>
+</head>
+<body>
+  <h1>atividade 1</h1>
+  <div id="maioroumenor"></div>
+  
+  <script>
+    let numero1 = prompt("insira o primeiro número");
+    let numero2 = prompt("insira o segundo número");
+
+    let retorno = "";
+
+    if(parseInt(numero1) > parseInt(numero2)) {
+        retorno = "O número " + numero1 +" é maior que o número " + numero2 
+    } 
+    else {
+        retorno = "o número " + numero2 + " é maior que o número " + numero1 }
+    document.getElementById("maioroumenor").innerHTML = retorno;
+
+
+  </script>
+</body>
+</html>
